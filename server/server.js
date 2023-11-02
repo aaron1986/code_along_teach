@@ -12,6 +12,5 @@ app.get("/", (request, response) => {
     response.json("Its Working!!");
   });
 
-
-app.get(PORT, (_, response) => response.json("App is runnin"));
+//leave alone
 app.listen(PORT, () => console.log(`App is running PORT ${PORT}`));
