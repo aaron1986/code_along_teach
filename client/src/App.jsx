@@ -18,7 +18,7 @@ function App() {
    // Handle translation form submit
    async function handleTranslate(event) {
     event.preventDefault();
-    const API = `http://localhost:8080/translate?word=${word}&from=${from}&to=${to}`;
+    const API = `https://translate-d2h0.onrender.com/translate?word=${word}&from=${from}&to=${to}`;
     try {
       const res = await axios.get(API);
       setTranslation(res.data);
